@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         initView();
         int a=111111;
         String title="标题";
+        String name="dfshjahfak";
         initToolbar();
         initNa();
         initData();
