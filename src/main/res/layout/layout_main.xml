@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_72"
+        android:id="@+id/main_toolbar"
+        >
+        <ImageView
+            android:layout_width="@dimen/dp_36"
+            android:layout_height="@dimen/dp_36"
+            android:id="@+id/main_girl"
+            android:src="@drawable/zhanweitu"
+            android:layout_marginTop="@dimen/dp_18"
+            android:layout_marginLeft="@dimen/dp_18"/>
+        <ImageView
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:id="@+id/main_box"
+            android:background="@drawable/message"
+            android:layout_marginRight="@dimen/dp_23"
+            android:layout_marginLeft="@dimen/dp_277"
+            android:layout_marginBottom="@dimen/dp_15"
+            />
+    </android.support.v7.widget.Toolbar>
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/tab"
+        app:tabMode="fixed"
+        app:tabBackground="@color/transparent"
+        app:tabIndicatorColor="@color/transparent"
+        ></android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vp"
+        android:layout_below="@id/main_toolbar"
+        android:layout_above="@id/tab"></android.support.v4.view.ViewPager>
+
+</RelativeLayout>
