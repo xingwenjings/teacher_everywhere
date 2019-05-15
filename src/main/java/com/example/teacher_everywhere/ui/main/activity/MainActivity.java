@@ -56,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
+        int a=111111;
         initToolbar();
         initNa();
         initData();
@@ -67,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
         ImageView img = view.findViewById(R.id.head_img);
         TextView head_about = view.findViewById(R.id.head_about);
         RelativeLayout rl_head = view.findViewById(R.id.rl_ll);
+
         rl_head.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
