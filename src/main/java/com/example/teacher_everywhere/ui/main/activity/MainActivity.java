@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         initView();
         int a=111111;
+        String title="标题";
         initToolbar();
         initNa();
         initData();
