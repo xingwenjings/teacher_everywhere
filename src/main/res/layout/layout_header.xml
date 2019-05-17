@@ -328,6 +328,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/dp_221"
             android:text="版本检测"
+            android:id="@+id/version"
             android:layout_marginTop="@dimen/dp_126"
             />
     </RelativeLayout>

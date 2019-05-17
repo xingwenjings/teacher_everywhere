@@ -9,6 +9,7 @@ import com.example.teacher_everywhere.bean.MainDataInfo;
 import com.example.teacher_everywhere.bean.LikeBean;
 import com.example.teacher_everywhere.bean.LoginInfo;
 import com.example.teacher_everywhere.bean.BanmiBean;
+import com.example.teacher_everywhere.bean.VersionBean;
 
 import java.util.HashMap;
 
@@ -102,5 +103,8 @@ public interface EveryWhereService {
 
     @GET("api/3.0/content/routes/{routeId}/reviews")
     Observable<MainDataInfo> getReviews(@Header("banmi-app-token") String token,@Path("routeId") int id,@Query("page") int page);
+
+    @GET("api/app/common/getVersionInfo?operating_system=android")
+    Observable<VersionBean> getVersion(@Header("banmi-app-token") String token);
 
 }

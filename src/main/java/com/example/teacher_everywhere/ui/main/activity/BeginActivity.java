@@ -3,6 +3,7 @@ package com.example.teacher_everywhere.ui.main.activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
@@ -10,6 +11,7 @@ import android.widget.ImageView;
 
 import com.example.teacher_everywhere.R;
 import com.example.teacher_everywhere.util.SpUtil;
+import com.example.teacher_everywhere.util.Tools;
 
 public class BeginActivity extends AppCompatActivity {
 

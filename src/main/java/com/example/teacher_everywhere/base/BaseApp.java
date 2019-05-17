@@ -7,6 +7,7 @@ import android.util.DisplayMetrics;
 import android.view.Display;
 import android.view.WindowManager;
 
+import com.example.teacher_everywhere.util.CrashHandler;
 import com.umeng.commonsdk.UMConfigure;
 import com.umeng.socialize.PlatformConfig;
 //5cd80767570df31427000ffb
@@ -22,6 +23,12 @@ public class BaseApp extends Application {
         sBaseApp = this;
         getScreenWH();
         initUmeng();
+        initCrashHandler();
+    }
+    //初始化全局异常处理器
+    private void initCrashHandler() {
+        CrashHandler instance = CrashHandler.getInstance();
+        instance.init(BaseApp.getInstance());
     }
 
     private void initUmeng() {
